@@ -1,4 +1,4 @@
-# yar
+# http-request-promise
 Yet another promise-based HTTP request library built on jQuery
 
 ## Why another HTTP request library using jQuery

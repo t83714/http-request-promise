@@ -1,6 +1,6 @@
 {
-  "name": "yar",
-  "version": "1.0.0",
+  "name": "http-request-promise",
+  "version": "1.0.1",
   "description": "Yet another promise-based HTTP request library built on jQuery.",
   "main": "index.js",
   "scripts": {

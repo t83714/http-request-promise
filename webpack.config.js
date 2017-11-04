@@ -14,6 +14,10 @@ if (PROD) {
     }));
 }
 plugins.push(new webpack.NoEmitOnErrorsPlugin());
+plugins.push(new webpack.ProvidePlugin({
+    $: 'jquery',
+    jQuery: 'jquery',
+}));
 
 module.exports = {
     target: "web",
@@ -31,7 +35,7 @@ module.exports = {
         filename: PROD ? "index.bundle.min.js" : "index.bundle.js",
     },
     externals:{
-        jquery: "jQuery",
+        jquery: true,
         "babel-polyfill": true
     },
     module: {

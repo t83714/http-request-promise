@@ -1,6 +1,6 @@
 {
   "name": "http-request-promise",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Yet another promise-based HTTP request library built on jQuery.",
   "main": "dist/index.bundle.min.js",
   "scripts": {

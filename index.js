@@ -115,4 +115,4 @@ request.get=function(url,data){
     return request(url,options);
 };
 
-export default request;
+module.exports=request;

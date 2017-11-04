@@ -1,11 +1,12 @@
 {
   "name": "http-request-promise",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Yet another promise-based HTTP request library built on jQuery.",
   "main": "dist/index.bundle.min.js",
   "scripts": {
     "prepublish": "PROD_ENV=1 webpack",
-    "build": "PROD_ENV=1 webpack --progress --colors",
+    "build": "webpack --progress --colors",
+    "build:min": "PROD_ENV=1 webpack --progress --colors",
     "watch": "webpack --progress --colors --watch",
     "test": "jest"
   },

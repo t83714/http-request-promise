@@ -31,7 +31,7 @@ module.exports = {
         filename: PROD ? "index.bundle.min.js" : "index.bundle.js",
     },
     externals:{
-        jquery: true,
+        jquery: "jQuery",
         "babel-polyfill": true
     },
     module: {

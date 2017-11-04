@@ -1,5 +1,5 @@
 import "babel-polyfill";
-import $ from "jquery";
+import "jquery";
 
 function urlencode (str) 
 {
@@ -68,11 +68,11 @@ const request=function(url,options){
             requestUrl=url+"&"+http_build_query(requestOptions.params,null,'&');
             delete requestOptions.params;
         }
-        $.ajax(requestUrl,requestOptions)
+        jQuery.ajax(requestUrl,requestOptions)
             .fail((jqXHR, textStatus, errorThrown)=>{
                 try{
-                    let errMsg=$.trim(jqXHR.responseText);
-                    if(!errMsg && jqXHR.statusText) errMsg=$.trim(`Network Error: ${jqXHR.statusText}`);
+                    let errMsg=jQuery.trim(jqXHR.responseText);
+                    if(!errMsg && jqXHR.statusText) errMsg=jQuery.trim(`Network Error: ${jqXHR.statusText}`);
                     if(!errMsg) errMsg="Network Error";
 
                     let e=new Error(errMsg);

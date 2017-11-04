@@ -11,6 +11,7 @@ if (PROD) {
     }));
     plugins.push(new webpack.optimize.UglifyJsPlugin({
         compress: { warnings: false },
+        sourceMap: true
     }));
 }
 plugins.push(new webpack.NoEmitOnErrorsPlugin());

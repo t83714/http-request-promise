@@ -15,10 +15,6 @@ if (PROD) {
     }));
 }
 plugins.push(new webpack.NoEmitOnErrorsPlugin());
-plugins.push(new webpack.ProvidePlugin({
-    $: 'jquery',
-    jQuery: 'jquery',
-}));
 
 module.exports = {
     target: "web",

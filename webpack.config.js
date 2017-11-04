@@ -30,7 +30,10 @@ module.exports = {
         libraryTarget: "umd",
         filename: PROD ? "index.bundle.min.js" : "index.bundle.js",
     },
-
+    externals:{
+        jquery: true,
+        "babel-polyfill": true
+    },
     module: {
         loaders: [{
             test: /\.jsx$|\.js$/,

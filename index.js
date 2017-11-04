@@ -77,6 +77,7 @@ const request=function(url,options){
                     let e=new Error(errMsg);
                     e.statusCode=jqXHR.status;
                     e.statusText=jqXHR.statusText;
+                    e.responseText=jqXHR.responseText;
 
                     reject(e);
                 }catch(e){
